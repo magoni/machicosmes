@@ -25,6 +25,16 @@ class FragmentsController < ApplicationController
     end
   end
 
+  def update
+    @fragment = Fragment.find(params[:id])
+
+    if @fragment.update(fragment_params)
+      redirect_to @fragment
+    else
+      render 'edit'
+    end
+  end
+
   private
     def fragment_params
       params.require(:fragment).permit(:title, :text)
