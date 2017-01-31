@@ -10,6 +10,7 @@ class FragmentsController < ApplicationController
 
   def show
     @fragment = Fragment.find(params[:id])
+    @processed_text = parse_links(@fragment.text)
   end
 
   def new
