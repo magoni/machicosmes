@@ -3,6 +3,11 @@ class FragmentsController < ApplicationController
     @fragments = Fragment.all
   end
 
+  def random
+    @fragment = Fragment.offset(rand(Fragment.count)).first
+    redirect_to @fragment
+  end
+
   def show
     @fragment = Fragment.find(params[:id])
   end

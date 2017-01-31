@@ -1,6 +1,8 @@
 <nav><%= link_to 'new', new_fragment_path %></nav>
-<main>
-<ul><% @fragments.each do |fragment| %>
-  <li><%= link_to fragment.title, fragment_path(fragment) %></li>
-</ul><% end %>
-</main>
+    <main>
+      <ul>
+      <% @fragments.each do |fragment| %>
+        <li><%= link_to fragment.title, fragment_path(fragment) %></li>
+      <% end %>
+      </ul>
+    </main>
