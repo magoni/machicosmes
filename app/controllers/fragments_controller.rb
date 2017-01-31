@@ -35,6 +35,13 @@ class FragmentsController < ApplicationController
     end
   end
 
+  def destroy
+    @fragment = Fragment.find(params[:id])
+    @fragment.destroy
+
+    redirect_to fragments_path
+  end
+
   private
     def fragment_params
       params.require(:fragment).permit(:title, :text)
