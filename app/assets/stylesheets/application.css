@@ -6,15 +6,24 @@
 body {
   margin: 24px;
   font-family: 'Lora', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
   color: #444;
+  text-rendering: optimizeLegibility;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
 }
+
+/*a {
+  color: #444;
+}
+
+a:visited {
+  color: #444;
+}*/
 
 nav a, nav a:visited {
   color: #ccc;
