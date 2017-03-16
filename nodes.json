@@ -1,0 +1,17 @@
+[
+    {
+        "tradition": "memory",
+        "place": "cave",
+        "practice": [
+            "memory arts",
+            "mneumonics"
+        ]
+    },
+    {
+        "tradition": "animism",
+        "place": [
+            "random",
+            "labrynth"
+        ]
+    }
+]
