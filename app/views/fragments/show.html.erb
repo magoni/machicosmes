@@ -1,6 +1,6 @@
 <strong><%= @fragment.title %></strong>
 <article>
-  <%= simple_format @processed_text %>
+  <%= sanitize simple_format(@processed_text, {}, :sanitize => false), tags: %w(a b i u em strong ul img ol br p h1 h2 h3 h4 h5 h6 div), attributes: %w(href id src) %>
 </article>
 <nav>
 <ul>
